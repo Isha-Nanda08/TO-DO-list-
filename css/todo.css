@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family:cursive;
+    box-sizing: border-box;
+    /* z-index: 1; */
+    /* background-blend-mode: lighten; */
+    /* position: absolute; */
+    /* back */
+}
+
+body{
+    background-image: url("../images/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    font-size: 1rem;
+    /* z-index: -1; */
+    z-index: 100;
+    /* opacity: 0.8; */
+    background-color: #000;
+    
+    
+}
+
+.content {
+    /* position: relative; */
+    opacity: 1;
+    z-index: 100;
+    background-color: hsla(0, 9%, 91%, 0.53);
+    font-weight:bolder;
+    color: #0d0d0d;
+    /* width: 120vh; */
+    align-content: center;
+        /* opacity: 0.8; */
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #f1eeee;
+        box-shadow: 1px 5px 15px #0000007e;
+        padding-bottom: 10px;
+}
+.title{
+    opacity: 1;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(43, 79, 80);
+    padding-bottom: 15px;
+    margin: 10px;
+    color:antiquewhite;
+    text-decoration: underline;
+    z-index: 1;
+    border: 3px solid rgb(167, 167, 22);
+}
+
+.todo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+.todo ,.show-list{
+    /* margin: 50px; */
+    display: grid;
+    grid-template-columns:30% 20% 10%;
+    gap: 20px;
+    /* row-gap: 20px; */
+    /* justify-items: center; */
+    justify-content: center;
+    grid-auto-flow:row;
+}
+
+input {
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    grid-auto-flow: row;
+    
+}
+
+.add,.delete {
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    /* font-size: 14px; */
+    /* text-overflow: clip; */
+    overflow:hidden;
+}
+
+.add{
+    background-color: rgb(4, 60, 4);
+    color: #fff;
+    border: 2px solid rgb(50, 245, 167);
+    /* border: #fff; */
+    &:hover{
+        background-color: rgb(207, 193, 176);
+        color: #000;
+        border:2px solid #000 ;
+    }
+}
+
+.delete{
+    background-color: rgb(217, 151, 127);
+    border: 3px solid #000;
+    &:hover{
+        background-color: rgb(56, 123, 101);
+        color: #fff;
+        
+    }
+}
+
+
+/* .listing{ */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+
+
+@media screen and (max-width:730px){
+    .delete{
+        font-size: 0.65rem;
+        text-wrap: wrap;
+        text-overflow: clip;
+        padding: 0px;
+    }
+}
+@media screen and (max-width:430px){
+    .delete{
+        font-size: 0.45rem;
+        text-wrap: wrap;
+        text-overflow: clip;
+        padding: 0px;
+    }
+}
